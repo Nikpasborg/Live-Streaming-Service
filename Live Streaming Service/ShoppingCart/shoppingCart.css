@@ -1,0 +1,260 @@
+body {
+    background-color: rgb(31, 30, 30);
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.shoppingCart__header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-left: 75px;
+    position: relative;
+    width: 100%;
+    font-size: 200%;
+}
+
+.shoppingCart__header #cart {
+    text-decoration: underline;
+}
+
+.shoppingCart__header p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.shoppingCart__tabs {
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border-bottom: 1px solid #000000; */
+}
+
+ul {
+    display: flex;
+    overflow: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a.active{
+    background-color: #ffffff13;
+    padding-block: 5px;
+}
+
+
+ul li a {
+    display: block;
+    padding-inline: 100px;
+    text-align: center;
+    transition: 0.5s;
+    text-decoration: none;
+    padding-block: 5px;
+}
+
+.line {
+    border-bottom: 1px solid #000000;
+    margin-inline: 5%;
+}
+
+
+.acc__info {
+    display: none;
+}
+
+.pro__acc {
+    display: none;
+}
+
+.row {
+    margin: auto;
+    display: table;
+    background-color: #ffffff13;
+    height: 15px;
+    width: 75%;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    margin-block: 10px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding-block: 5px;
+}
+
+.column p {
+    padding-left: 20px;
+    font-size: 150%;
+}
+
+.column #detail {
+    font-size: 100%;
+    margin-right: 40px;
+    text-align: center;
+    
+}
+
+#column3 { 
+    margin-top: 15px;
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.dropDownMenu {
+    position: absolute;
+    display: inline-block;
+    margin-top: 30px;
+       
+}
+
+.dropDownBtn { 
+    background-color: #f3f3f3;
+    padding-inline: 16px;
+    padding-block: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+
+.dropDownMenu:hover .dropDownContent{
+    display: block;
+    
+    
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #383737;
+    min-width: 200px;
+    max-height: 168px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropDownContent p {
+    /* display: none; */
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+    /* margin-block: 25px; */
+}
+
+.dropDownContent p:hover{
+    background-color: #555555;
+    cursor: pointer;
+
+}
+
+.dropDownMenu:hover .dropDownContent2{
+    display: block;
+}
+
+.dropDownContent2 {
+    display: none;
+    position: absolute;
+    background-color: #383737;
+    min-width: 200px;
+    max-height: 167px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+
+.dropDownContent2 p {
+    /* display: none; */
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+    /* margin-block: 25px; */
+    
+}
+
+.dropDownContent2 p:hover{
+    background-color: #555555;
+    cursor: pointer;
+}
+
+div .addToCart {
+    margin-top: 22px;
+    float: right;
+    margin-right: 13%;
+    margin-top: 7%;
+    border-radius: 20px;
+    
+}
+
+.addToCart:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.5s;
+    background-color: greenyellow;
+
+}
+
+#meCoin {
+    width: 50px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.store {
+    overflow: hidden;
+    min-height: 440px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+}
+
+.cartItem { 
+    background-color: #383737;
+    width: 100%;
+}
+
+.active:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+    
+
+}
+
+#tab1:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+}
+
+#tab2:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+}
+
+.item {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+}

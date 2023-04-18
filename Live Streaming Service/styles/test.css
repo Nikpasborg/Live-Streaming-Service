@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #797a79;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #845695;
+}
+
+#rightbuttons {
+
+    position: fixed;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 540;
+    color: #ebe0e0;
+    border-radius: 4px;
+    border-color: #845695;
+    background-color: #845695;
+    padding: 10px;
+    right: 6%;
+
+}
+
+#rightbuttons:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+
+#navsearch {
+
+    position: fixed;
+    z-index: 2;
+    top: 27px;
+    left: 38%;
+    box-shadow: 3px 4px 5px #000000;
+
+}
+
+body {
+    background-color: rgb(31, 30, 30);
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    background-color: #1a1a1a;
+    text-decoration: none;
+    padding: 16px 5%;
+    z-index: 2;
+
+}
+
+#nav a {
+    text-decoration: none;
+
+}
+
+#logo {
+
+    position: inherit;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    gap: 16px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 0;
+    margin: 0;
+    color: #ebe0e0;
+    float: right;
+    height: 42px;
+
+
+}
+
+#logo img {
+    height: 42px;
+
+
+}
+
+
+#nav__links {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 1px;
+}
+
+#nav_links {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    background-color: #1a1a1a;
+}
+
+.nav_link {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 1px;
+}
+
+@media (max-width: 520px) {
+    #nav__links {
+        column-gap: 3em;
+    }
+}
+
+.nav__link:hover {
+    color: rgb(230, 228, 228);
+    text-decoration: none;
+    border-color: #845695;
+}
+
+p,
+a {
+    font-weight: 300;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 30px;
+    margin: 20% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.modal .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #845695;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modal .close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.modal input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal button {
+    background-color: #845695;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.modal .imgcontainer {
+    text-align: center;
+    margin: 12px 0 12px 0;
+    position: relative;
+}
+
+
+.modal .container {
+    padding: 16px;
+}
+
+.modal span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+#signup {
+
+    padding: 16px;
+    font-size: large;
+    font-weight: 1000;
+    color: #ccc;
+}
+
+#signup:hover {
+opacity: 0.9;
+}
+
+#categories {
+
+background-color: #845695;
+display: inline-block;
+border-radius: 10px;
+font-size: 30px;
+padding: 25px;
+color: white;
+bottom: 80px;
+
+}
+
+#categories:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+#categoriesbox { 
+
+    padding: 55px;
+    padding-top: 10px;  
+    margin: 1% auto 2% auto;
+    width: 70%;
+    text-align: center;
+
+}
+
+#streambox {
+    background-color: #1a1a1a;
+    padding: 55px;
+    padding-top: 10px;  
+    margin: 12% auto 2% auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    width: 70%;
+    text-align: center;
+}
+
+#streamboxtext {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 9px;
+
+}
+
+iframe {
+    width: 100%;
+    }

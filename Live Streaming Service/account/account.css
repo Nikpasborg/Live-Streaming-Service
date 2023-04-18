@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(31, 30, 30);
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.account__header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-left: 75px;
+    position: relative;
+    width: 100%;
+    font-size: 200%;
+}
+
+.account__header #acc {
+    text-decoration: underline;
+}
+
+.account__header p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.account__tabs {
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border-bottom: 1px solid #000000; */
+}
+
+ul {
+    display: flex;
+    overflow: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a.active{
+    background-color: #ffffff13;
+    padding-block: 5px;
+}
+
+
+ul li a {
+    display: block;
+    padding-inline: 100px;
+    text-align: center;
+    transition: 0.5s;
+    text-decoration: none;
+    padding-block: 5px;
+}
+
+.line {
+    border-bottom: 1px solid #000000;
+    margin-inline: 5%;
+}
+
+.pers__info{
+    display: block;
+}
+
+.acc__info {
+    display: block;
+    transform: translate(0px, -2000px)
+}
+
+.pro__acc {
+    display: block;
+    transform: translate(0px, -2000px)
+}
+
+.info__container {
+    overflow: hidden;
+}
+
+.row {
+    margin: auto;
+    display: table;
+    background-color: #ffffff13;
+    height: 15px;
+    width: 50%;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    margin-block: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-block: 5px;
+}
+
+.column p {
+    padding-left: 20px;
+    font-size: 150%;
+}
+
+.active:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+}
+
+#tab2:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+}
+
+#tab3:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+    opacity: 0.9;
+    
+}
